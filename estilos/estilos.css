@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    font-size: 62.5%;
+}
+
+.fsz-3{
+    font-size: 3rem;
+}
+.fsz-5{
+    font-size: 5rem;
+}
+.fsz-10{
+    font-size: 10rem;
+}
+
+.color-principal{
+    color: #D2D2D2;
+}
+
+.color-secundario{
+    color: #222222;
+}
+
+/**/
+.header.inicio{
+    background-image: url(../img/fondo.jpg);
+    background-position:center;
+    background-size:cover;
+    height: 100vh;
+    min-height: 60rem;
+    
+}
+.barranavegacion{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.barranavegacion h1{
+    font-size: 5rem;
+}
+
+.barranavegacion a{
+    text-decoration: none;
+    color: #D2D2D2;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.navegacion a{
+    color:rgba(210,210,210,0.8);
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin-right:2rem;
+}
+
+.navegacion a:last-of-type{
+    margin: 0;
+}
+
+.navegacion a:hover{
+    color:rgba(255,255,255,0.8)
+}
+
+.navegacion ul li a{
+    padding-right: 1.5rem;
+}
+
+
+/*Encabezado*/
+.encabezado{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color:rgba(210,210,210,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15rem;
+    align-items: center;
+    align-content: center;
+}
+
+.encabezado h2{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 5rem;
+}
+
+
+.encabezadofooter h2{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+.encabezado p{
+    font-size: 1.8rem;
+}
+/*Footer-index*/
+.fondo-footer{
+    background-color: #D2D2D2;
+}
+
+.redes-sociales-footer a img{
+    transition:0.3s;
+    
+}
+
+.redes-sociales-footer a img:hover{
+    transform: scale(1.1);
+}
+
+.ocultar{
+    display: none;
+}
+
+/*GALERIA*/
+
+.header{
+    background-color:#303134;
+    padding: 5rem 0 4.8rem 0;
+}
+
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-auto-rows: 10rem;
+    grid-gap: 0.5rem;
+}
+    .section-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem 10rem 10rem;
+}
+.div1 { grid-area: 1 / 1 / 3 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+.div4 { grid-area: 3 / 1 / 4 / 3; }
+.div5 { grid-area: 4 / 2 / 6 / 3; }
+.div6 { grid-area: 4 / 1 / 5 / 2; }
+.div7 { grid-area: 5 / 1 / 6 / 2; }
+
+.imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}
+
+.tamaño-carrusel{
+    display: none;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 768px) {
+
+        .nav-index{
+            display: none;
+        }
+
+        .encabezado h2{
+            font-size: 3rem;
+        }
+
+        .ocultar{
+            display: flex;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            background-color: #303134;
+        }
+
+        .ocultar a{
+            text-decoration: none;
+            color: #303134;
+        }
+
+        .ocultar button{
+            font-size: 2rem;
+            background-color: #D2D2D2;
+            border-radius: 2rem;
+            border-style: none;
+            padding: 1rem;
+        }
+
+        .barranavegacion-galeria{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navegacion-galeria{
+            padding-top: 1rem;
+        }
+        
+        .contenedor-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 1fr);
+            grid-auto-rows: 10rem;
+            grid-gap: 0.5rem;
+            }
+
+            .tamaño-carrusel{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 5rem;
+            }
+            .tamaño-carrusel img{
+                border-radius: 0.5rem;
+            }
+            .carrusel{
+                max-width:95%;
+                max-height:100%;
+            }
+            .section-grid{
+                display: none;
+            }
+
+            .fsz-5{
+                font-size: 3rem;
+            }
+    }
